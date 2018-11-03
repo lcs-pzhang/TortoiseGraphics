@@ -11,14 +11,6 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
-  
-    turtle.penColor(. red)
-    turtle.fillColor(.red)
-    //  Draw a squre
-    for _ in 1...4 {
-        turtle.forward(100)
-        turtle.right(90)
-    }
     
-    turtle.endFill()
+
 }
