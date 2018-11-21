@@ -21,22 +21,26 @@ class CanvasView: NSView {
             t.goto(-300, 75)
             
             
+            t.uppercaseP(scaleFactor: 2.0)
+            t.uppercaseP(scaleFactor: 0.5)
             t.uppercaseP()
-            t.lowercaseH()
-            t.firsti()
-            t.firstl()
-            t.secondl()
-            t.secondi()
-            t.secondp()
             
-            t.goto(-300, -100)
-            
-            t.capitalZ()
-            t.secondlowerh()
-            t.lowera()
-            t.lowern()
-            t.forward(1)
-            t.lowerg()
+//            t.uppercaseP()
+//            t.lowercaseH()
+//            t.firsti()
+//            t.firstl()
+//            t.secondl()
+//            t.secondi()
+//            t.secondp()
+//
+//            t.goto(-300, -100)
+//
+//            t.capitalZ()
+//            t.secondlowerh()
+//            t.lowera()
+//            t.lowern()
+//            t.forward(1)
+//            t.lowerg()
         }
     }
     

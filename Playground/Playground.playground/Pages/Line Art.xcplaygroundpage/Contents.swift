@@ -13,8 +13,8 @@ PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
     
-    turtle.penColor(. blue)
-     for _ in 1...21 {
+
+     for _ in 1...9 {
         turtle.forward(75)
         turtle.left(45)
         turtle.forward(75)
@@ -27,10 +27,10 @@ canvas.drawing { turtle in
     }
     
     turtle.penUp()
-    turtle.goto(-3, 37)
+    turtle.goto(-145, -30)
     turtle.penDown()
-    turtle.penColor(.yellow)
-    for _ in 1...25 {
+  
+    for _ in 1...7 {
         turtle.forward(90)
         turtle.left(70)
         turtle.forward(90)
@@ -41,6 +41,35 @@ canvas.drawing { turtle in
         turtle.left(70)
         turtle.left(10)
     }
+    turtle.left(90)
+    turtle.forward(150)
+    turtle.left(45)
+    turtle.forward(10)
+    turtle.left(40)
+    
+    for _ in 1...7 {
+        turtle.forward(10)
+        turtle.right(15)
+        turtle.right(45)
+        turtle.penDown()
+        turtle.right(90)
+        turtle.forward(60)
+        
+        
+    }
+    turtle.penUp()
+    turtle.left(110)
+    turtle.forward(220)
+    
+    for _ in 1...9 {
+        turtle.forward(10)
+        turtle.left(15)
+        turtle.left(45)
+        turtle.penDown()
+        turtle.left(90)
+        turtle.forward(60)
+    }
+    
     
     
     

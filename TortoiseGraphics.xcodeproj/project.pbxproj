@@ -40,7 +40,7 @@
 		14C3A09D201CA62000C7A28C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3A09C201CA62000C7A28C /* Shape.swift */; };
 		14D753A91FE173C80038F931 /* CommandFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D753A81FE173C80038F931 /* CommandFill.swift */; };
 		14D753AB1FE17D290038F931 /* Vec2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D753AA1FE17D290038F931 /* Vec2D.swift */; };
-		EC6A7BD62183518600A70021 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6A7BD52183518600A70021 /* extensions.swift */; };
+		ECB2884D21A3055E003EE307 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2884C21A3055E003EE307 /* extensions.swift */; };
 		ECFC42652191F1020058421E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC42642191F1020058421E /* AppDelegate.swift */; };
 		ECFC42672191F1020058421E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC42662191F1020058421E /* ViewController.swift */; };
 		ECFC42692191F1040058421E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFC42682191F1040058421E /* Assets.xcassets */; };
@@ -93,7 +93,7 @@
 		14C3A09C201CA62000C7A28C /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		14D753A81FE173C80038F931 /* CommandFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandFill.swift; sourceTree = "<group>"; };
 		14D753AA1FE17D290038F931 /* Vec2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vec2D.swift; sourceTree = "<group>"; };
-		EC6A7BD52183518600A70021 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extensions.swift; path = ../../../extensions.swift; sourceTree = "<group>"; };
+		ECB2884C21A3055E003EE307 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		ECFC42622191F1020058421E /* DrawMyName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawMyName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFC42642191F1020058421E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFC42662191F1020058421E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -218,8 +218,8 @@
 				142F5C821EDC5683008BEFAB /* Tortoise+Motion.swift */,
 				142F5C971EDC6165008BEFAB /* Tortoise+PenControl.swift */,
 				142F5C9B1EDC63DA008BEFAB /* Tortoise+TortoiseState.swift */,
+				ECB2884C21A3055E003EE307 /* extensions.swift */,
 				142F5C841EDC5688008BEFAB /* Internal */,
-				EC6A7BD52183518600A70021 /* extensions.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -371,7 +371,6 @@
 			buildActionMask = 0;
 			files = (
 				145631601FE4863200B3B2A9 /* Canvas.swift in Sources */,
-				EC6A7BD62183518600A70021 /* extensions.swift in Sources */,
 				14D753A91FE173C80038F931 /* CommandFill.swift in Sources */,
 				142F5C981EDC6165008BEFAB /* Tortoise+PenControl.swift in Sources */,
 				14D753AB1FE17D290038F931 /* Vec2D.swift in Sources */,
@@ -380,6 +379,7 @@
 				142F5C8E1EDC5A94008BEFAB /* CommandSetHeading.swift in Sources */,
 				142F5C951EDC6077008BEFAB /* CommandPenDown.swift in Sources */,
 				1456315E1FE4809D00B3B2A9 /* PlaygroundCanvas.swift in Sources */,
+				ECB2884D21A3055E003EE307 /* extensions.swift in Sources */,
 				14588D181EDF042300922BE4 /* CommandColor.swift in Sources */,
 				14588D161EDF03D700922BE4 /* Color+CGColor.swift in Sources */,
 				142F5C961EDC6077008BEFAB /* CommandShowTurtle.swift in Sources */,
