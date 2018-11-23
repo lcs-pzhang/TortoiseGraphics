@@ -43,11 +43,10 @@ canvas.drawing { turtle in
     }
     turtle.left(90)
     turtle.forward(150)
-    turtle.left(45)
-    turtle.forward(10)
-    turtle.left(40)
+    turtle.left(90)
+    turtle.forward(45)
     
-    for _ in 1...7 {
+    for _ in 1...9 {
         turtle.forward(10)
         turtle.right(15)
         turtle.right(45)
@@ -58,8 +57,8 @@ canvas.drawing { turtle in
         
     }
     turtle.penUp()
-    turtle.left(110)
-    turtle.forward(220)
+    turtle.left(105)
+    turtle.forward(110)
     
     for _ in 1...9 {
         turtle.forward(10)
@@ -69,9 +68,60 @@ canvas.drawing { turtle in
         turtle.left(90)
         turtle.forward(60)
     }
+    turtle.penUp()
+    turtle.left(35)
+    turtle.forward(135)
     
+    for _ in 1...9 {
+        turtle.forward(10)
+        turtle.left(15)
+        turtle.left(45)
+        turtle.penDown()
+        turtle.left(90)
+        turtle.forward(60)
+        
+    }
+    turtle.up()
+    turtle.forward(86)
+    turtle.left(100)
+    turtle.forward(40)
+    turtle.left(90)
+    turtle.forward(30)
     
+    for _ in 1...9 {
+        turtle.forward(10)
+        turtle.right(15)
+        turtle.right(45)
+        turtle.penDown()
+        turtle.right(90)
+        turtle.forward(60)
+    }
+    turtle.penUp()
+    turtle.forward(120)
+    turtle.left(115)
+    turtle.forward(70)
     
-    
+    for _ in 1...9 {
+        turtle.forward(10)
+        turtle.right(15)
+        turtle.right(45)
+        turtle.penDown()
+        turtle.right(90)
+        turtle.forward(60)
+        
+    }
+    turtle.left(45)
+    turtle.penUp()
+    turtle.forward(157)
+    turtle.penDown()
+    turtle.curve(withSides: 25, withSize: 10, drawSides: 9)
+    turtle.right(90)
+    turtle.penUp()
+    turtle.forward(50)
+    turtle.right(45)
+    turtle.forward(75)
+    turtle.right(90)
+    turtle.curve(withSides: -25, withSize: 10, drawSides: 9)
+   
 }
 

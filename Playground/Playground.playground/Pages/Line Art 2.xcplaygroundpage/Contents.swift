@@ -6,13 +6,16 @@ import CoreGraphics
 
 let myFrame =  CGRect(x: 0, y: 0, width: 500, height: 500)
 let canvas = PlaygroundCanvas(frame: myFrame)
-canvas.frameRate = 30 //
+canvas.frameRate = 50 //
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
-canvas.drawing { t in
+canvas.drawing { turtle in
     
-    t.penDown()
+    turtle.penDown()
+    turtle.curve(withSides: -25, withSize: 15, drawSides: 5 )
+    turtle.right(
+    
    
     
 }
