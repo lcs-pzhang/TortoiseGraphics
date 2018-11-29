@@ -196,5 +196,32 @@ public extension Tortoise {
         self.curve(withSides: 25, withSize: 7, drawSides: 17)
         self.left(360)
         self.penDown()
-        self.forward(100)    }
+        self.forward(100)
+
+    }
+
+    func drawSpikyWheel() {
+
+        for _ in 1...12 {
+            self.penDown()
+            self.forward(25)
+            self.left(30)
+            self.back(15)
+
+        }
+
+    }
+
+    func drawfloweraxel() {
+
+        for _ in 1...19 {
+            self.penDown()
+            self.forward(30)
+            self.left(100)
+            self.back(10)
+            self.left(90)
+            self.forward(70)
+        }
+    }
+
 }
