@@ -11,6 +11,15 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { t in
+    t.up()
+    t.forward(100)
+    t.right(90)
+    t.penUp()
+    t.curve(withSides: 20, withSize: 25, drawSides: 20)
+    t.forward(13)
+    t.left(90)
+    t.up()
+    t.backward(79)
     
     
     
