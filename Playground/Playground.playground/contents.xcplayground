@@ -13,5 +13,6 @@
         <page name='Assignment'/>
         <page name='Assignment with English name'/>
         <page name='Line Art 2'/>
+        <page name='Advanced line art'/>
     </pages>
 </playground>

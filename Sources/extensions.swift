@@ -222,6 +222,40 @@ public extension Tortoise {
             self.left(90)
             self.forward(70)
         }
-    }
+        func drawwave() {
+            self.forward(25)
+            self.left(190)
+            self.curve(withSides: -20, withSize: 9, drawSides: 5)
+            self.right(45)
+            self.curve(withSides: 20, withSize: 4, drawSides: 9)
+            self.left(15)
+            self.curve(withSides: 15, withSize: 3, drawSides: 8)
+            self.right(45)
+            self.curve(withSides: 10, withSize: 3, drawSides: 2)
+            self.right(135)
+            self.penDown()
+            self.forward(7)
+            self.left(45)
+            self.curve(withSides: -10, withSize: 7, drawSides: 5)
+            self.penDown()
+            self.right(50)
+            self.forward(15)
+            self.left(185)
+            self.forward(40)
+            self.right(90)
+            self.penUp()
+            self.forward(35)
+            self.right(90)
+            self.forward(27)
+            self.penDown()
+            self.curve(withSides: 20, withSize: 4, drawSides: 9)
+            self.left(15)
+            self.curve(withSides: 15, withSize: 2, drawSides: 4)
+            self.left(100)
+            self.curve(withSides: -15, withSize: 3, drawSides: 5)
+
+        }
+
+           }
 
 }

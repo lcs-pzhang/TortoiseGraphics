@@ -59,12 +59,7 @@ canvas.drawing { turtle in
     turtle.penDown()
     turtle.curve(withSides: -5, withSize: 60, drawSides: 3)
     turtle.hideTortoise()
-//
-//
-//
-//
-//
-    
+
 
    
     
