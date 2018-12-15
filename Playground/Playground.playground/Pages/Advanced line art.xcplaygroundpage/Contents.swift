@@ -79,13 +79,70 @@ canvas.drawing { t in
     t.left(100)
     t.curve(withSides: -15, withSize: 3, drawSides: 5)
     
+    t.right(80)
+    t.penUp()
+    t.forward(75)
+    t.left(150)
+    t.penDown()
+    t.forward(70)
+    
+    // draw fire
+    t.curve(withSides: 25, withSize: 8, drawSides: 8)
+    t.right(90)
+    t.curve(withSides: 50, withSize: 6, drawSides: 8)
+    t.penUp()
+    t.left(15)
+    t.curve(withSides: 20, withSize: 5, drawSides: 8)
+    t.right(90)
+    t.curve(withSides: 35, withSize: 5, drawSides: 7)
+    t.penUp()
+    t.right(150)
+    t.curve(withSides: 70, withSize: 5, drawSides: 12)
+    t.right(90)
+    t.curve(withSides: 50, withSize: 3, drawSides: 20)
+    t.right(50)
+    t.penUp()
+    t.forward(10)
+    t.right(90)
+    t.forward(3)
+    t.left(90)
+    t.curve(withSides: 40, withSize: 4, drawSides: 8)
+    t.right(65)
+    t.curve(withSides: 30, withSize: 3, drawSides: 11)
+    
+    t.left(90)
+    t.penUp()
+    t.forward(80)
+    t.right(70)
+    
+    // draw the sun
+    t.penDown()
+    t.forward(40)
+    t.right(177)
+    t.forward(100)
+    t.curve(withSides: 20, withSize: 3, drawSides: 20)
+    t.forward(3)
+    t.left(80)
+    t.penUp()
+    t.back(7)
+
+    for _  in 1...36 {
+        t.penDown()
+        t.forward(40)
+        t.back(40)
+        t.right(10)
+    }
+//
+    
+
+    
     
 
     
     
     
     
-    
-    t.hideTortoise()
+
+//    t.hideTortoise()
     
 }
