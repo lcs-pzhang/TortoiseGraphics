@@ -223,7 +223,8 @@ public extension Tortoise {
             self.forward(70)
         }
 
-        func drawwave() {
+    }
+            func drawwave() {
             self.forward(25)
             self.left(190)
             self.curve(withSides: -20, withSize: 9, drawSides: 5)
@@ -253,6 +254,34 @@ public extension Tortoise {
             self.left(15)
             self.curve(withSides: 15, withSize: 2, drawSides: 4)
             self.left(100)
-            self.curve(withSides: -15, withSize: 3, drawSides: 5)           }
+            self.curve(withSides: -15, withSize: 3, drawSides: 5)
+
+        }
+
+    }
+            func drawfire() {
+        self.curve(withSides: 25, withSize: 8, drawSides: 8)
+        self.right(90)
+        self.curve(withSides: 50, withSize: 6, drawSides: 8)
+        self.penUp()
+        self.left(15)
+        self.curve(withSides: 20, withSize: 5, drawSides: 8
+        self.right(90)
+        self.curve(withSides: 35, withSize: 5, drawSides: 7)
+        self.penUp()
+        self.right(150)
+        self.curve(withSides: 70, withSize: 5, drawSides: 12)
+        self.right(90)
+        self.curve(withSides: 50, withSize: 3, drawSides: 20)
+        self.right(50)
+        self.penUp()
+        self.forward(10)
+        self.right(90)
+        self.forward(3)
+        self.left(90)
+        self.curve(withSides: 40, withSize: 4, drawSides: 8)
+        self.right(65)
+        self.curve(withSides: 30, withSize: 3, drawSides: 11)
+        }
 
 }

@@ -79,6 +79,8 @@ canvas.drawing { t in
     t.left(100)
     t.curve(withSides: -15, withSize: 3, drawSides: 5)
     
+    
+    
     t.right(80)
     t.penUp()
     t.forward(75)
@@ -86,29 +88,8 @@ canvas.drawing { t in
     t.penDown()
     t.forward(70)
     
-    // draw fire
-    t.curve(withSides: 25, withSize: 8, drawSides: 8)
-    t.right(90)
-    t.curve(withSides: 50, withSize: 6, drawSides: 8)
-    t.penUp()
-    t.left(15)
-    t.curve(withSides: 20, withSize: 5, drawSides: 8)
-    t.right(90)
-    t.curve(withSides: 35, withSize: 5, drawSides: 7)
-    t.penUp()
-    t.right(150)
-    t.curve(withSides: 70, withSize: 5, drawSides: 12)
-    t.right(90)
-    t.curve(withSides: 50, withSize: 3, drawSides: 20)
-    t.right(50)
-    t.penUp()
-    t.forward(10)
-    t.right(90)
-    t.forward(3)
-    t.left(90)
-    t.curve(withSides: 40, withSize: 4, drawSides: 8)
-    t.right(65)
-    t.curve(withSides: 30, withSize: 3, drawSides: 11)
+   
+    t.drawfire()
     
     t.left(90)
     t.penUp()
@@ -132,7 +113,48 @@ canvas.drawing { t in
         t.back(40)
         t.right(10)
     }
+    
+    
+    t.penUp()
+    t.left(90)
+    t.forward(100)
+    t.left(70)
+    t.forward(50)
+    t.left(50)
+    t.penDown()
+    t.forward(100)
+    
+    // draw the ground
+    for _ in 1...6 {
+        t.penDown()
+        t.forward(15)
+        t.left(60)
+    }
+    t.right(135)
+    t.penUp()
+    t.forward(5)
+    t.right(115)
+    for _ in 1...6 {
+        t.penDown()
+        t.forward(20)
+        t.right(60)
+    }
+    t.forward(19)
+    for _ in 1...6 {
+        t.forward(20)
+        t.right(120)
+        t.forward(20)
+        t.left(60)
+       
+        
+    }
+    
+    
+    
 //
+//    // draw the darkness
+//    t.penSize
+//    t.curve(withSides: 10, withSize: 7, drawSides: 10)
     
 
     
