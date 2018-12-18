@@ -145,16 +145,30 @@ canvas.drawing { t in
         t.right(120)
         t.forward(20)
         t.left(60)
-       
-        
-    }
+       }
+    
+    t.left(100)
+    t.penUp()
+    t.forward(100)
+    t.left(75)
+    t.penUp()
+    t.back(40)
+    t.penDown()
+    t.forward(70)
+    
+    // draw the wind
+    t.curve(withSides: -10, withSize: 5, drawSides: 7)
+//    t.left(15)
+    t.curve(withSides: -12, withSize: 7, drawSides: 11)
+    t.penDown()
+    t.forward(11)
+    t.left(70)
+    t.curve(withSides: -10, withSize: 12, drawSides: 4)
+    t.curve(withSides: 10, withSize: 12, drawSides: 7)
+    t.curve(withSides: 12, withSize: 7, drawSides: 11)
+    t.curve(withSides: 10, withSize: 5, drawSides: 7)
     
     
-    
-//
-//    // draw the darkness
-//    t.penSize
-//    t.curve(withSides: 10, withSize: 7, drawSides: 10)
     
 
     
