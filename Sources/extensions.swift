@@ -257,31 +257,56 @@ public extension Tortoise {
             self.curve(withSides: -15, withSize: 3, drawSides: 5)
 
         }
-
-    }
-            func drawfire() {
+        func drawfire() {
         self.curve(withSides: 25, withSize: 8, drawSides: 8)
         self.right(90)
         self.curve(withSides: 50, withSize: 6, drawSides: 8)
         self.penUp()
         self.left(15)
-        self.curve(withSides: 20, withSize: 5, drawSides: 8
+        self.curve(withSides: 20, withSize: 5, drawSides: 8)
         self.right(90)
-        self.curve(withSides: 35, withSize: 5, drawSides: 7)
-        self.penUp()
-        self.right(150)
-        self.curve(withSides: 70, withSize: 5, drawSides: 12)
-        self.right(90)
-        self.curve(withSides: 50, withSize: 3, drawSides: 20)
-        self.right(50)
-        self.penUp()
-        self.forward(10)
-        self.right(90)
-        self.forward(3)
-        self.left(90)
-        self.curve(withSides: 40, withSize: 4, drawSides: 8)
-        self.right(65)
-        self.curve(withSides: 30, withSize: 3, drawSides: 11)
+            self.curve(withSides: 35, withSize: 5, drawSides: 7)
+            self.penUp()
+            self.right(150)
+            self.curve(withSides: 70, withSize: 5, drawSides: 12)
+            self.right(90)
+            self.curve(withSides: 50, withSize: 3, drawSides: 20)
+            self.right(50)
+            self.penUp()
+            self.forward(10)
+            self.right(90)
+            self.forward(3)
+            self.left(90)
+            self.curve(withSides: 40, withSize: 4, drawSides: 8)
+            self.right(65)
+            self.curve(withSides: 30, withSize: 3, drawSides: 11)
+    }
+    func drawground() {
+        for _ in 1...6 {
+            self.penDown()
+            self.forward(15)
+            self.left(60)
         }
+        self.right(135)
+        self.penUp()
+        self.forward(5)
+        self.right(115)
+        for _ in 1...6 {
+            self.penDown()
+            self.forward(20)
+            self.right(60)
+        }
+        self.forward(19)
+        for _ in 1...6 {
+            self.forward(20)
+            self.right(120)
+            self.forward(20)
+            self.left(60)
+        }
+        
+        
+    }
+   
+
 
 }

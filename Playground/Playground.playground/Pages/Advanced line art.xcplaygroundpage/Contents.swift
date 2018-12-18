@@ -48,38 +48,7 @@ canvas.drawing { t in
     t.left(90)
     
     // draw wave
-    t.forward(25)
-    t.left(190)
-    t.curve(withSides: -20, withSize: 9, drawSides: 5)
-    t.right(45)
-    t.curve(withSides: 20, withSize: 4, drawSides: 9)
-    t.left(15)
-    t.curve(withSides: 15, withSize: 3, drawSides: 8)
-    t.right(45)
-    t.curve(withSides: 10, withSize: 3, drawSides: 2)
-    t.right(135)
-    t.penDown()
-    t.forward(7)
-    t.left(45)
-    t.curve(withSides: -10, withSize: 7, drawSides: 5)
-    t.penDown()
-    t.right(50)
-    t.forward(15)
-    t.left(185)
-    t.forward(40)
-    t.right(90)
-    t.penUp()
-    t.forward(35)
-    t.right(90)
-    t.forward(27)
-    t.penDown()
-    t.curve(withSides: 20, withSize: 4, drawSides: 9)
-    t.left(15)
-    t.curve(withSides: 15, withSize: 2, drawSides: 4)
-    t.left(100)
-    t.curve(withSides: -15, withSize: 3, drawSides: 5)
-    
-    
+    t.drawwave()
     
     t.right(80)
     t.penUp()
@@ -88,7 +57,7 @@ canvas.drawing { t in
     t.penDown()
     t.forward(70)
     
-   
+   // draw fire
     t.drawfire()
     
     t.left(90)
@@ -107,11 +76,11 @@ canvas.drawing { t in
     t.penUp()
     t.back(7)
 
-    for _  in 1...36 {
+    for _  in 1...18 {
         t.penDown()
         t.forward(40)
         t.back(40)
-        t.right(10)
+        t.right(20)
     }
     
     
@@ -125,27 +94,7 @@ canvas.drawing { t in
     t.forward(100)
     
     // draw the ground
-    for _ in 1...6 {
-        t.penDown()
-        t.forward(15)
-        t.left(60)
-    }
-    t.right(135)
-    t.penUp()
-    t.forward(5)
-    t.right(115)
-    for _ in 1...6 {
-        t.penDown()
-        t.forward(20)
-        t.right(60)
-    }
-    t.forward(19)
-    for _ in 1...6 {
-        t.forward(20)
-        t.right(120)
-        t.forward(20)
-        t.left(60)
-       }
+    t.drawground()
     
     t.left(100)
     t.penUp()
@@ -158,7 +107,6 @@ canvas.drawing { t in
     
     // draw the wind
     t.curve(withSides: -10, withSize: 5, drawSides: 7)
-//    t.left(15)
     t.curve(withSides: -12, withSize: 7, drawSides: 11)
     t.penDown()
     t.forward(11)
@@ -168,6 +116,61 @@ canvas.drawing { t in
     t.curve(withSides: 12, withSize: 7, drawSides: 11)
     t.curve(withSides: 10, withSize: 5, drawSides: 7)
     
+    t.right(180)
+    t.penUp()
+    t.forward(130)
+    t.left(80)
+    t.forward(90)
+    t.left(90)
+    t.forward(20)
+    t.right(205)
+    t.penDown()
+    t.forward(90)
+    
+    // draw darkness
+    t.curve(withSides: 10, withSize: 4, drawSides: 10)
+    t.curve(withSides: 10, withSize: 3, drawSides: 10)
+    t.curve(withSides: 10, withSize: 2, drawSides: 10)
+    t.curve(withSides: 10, withSize: 1, drawSides: 10)
+    t.left(80)
+    t.forward(15)
+    t.left(90)
+    t.forward(5)
+    t.right(180)
+    t.curve(withSides: 12, withSize: 15, drawSides: 12)
+    t.curve(withSides: 12, withSize: 14.5, drawSides: 12)
+    t.curve(withSides: 12, withSize: 14, drawSides: 12)
+    t.curve(withSides: 12, withSize: 13.5, drawSides: 12)
+    t.curve(withSides: 12, withSize: 13, drawSides: 12)
+    t.curve(withSides: 12, withSize: 12.5, drawSides: 12)
+    t.curve(withSides: 12, withSize: 12, drawSides: 12)
+    t.curve(withSides: 12, withSize: 11.5, drawSides: 12)
+    t.curve(withSides: 12, withSize: 11, drawSides: 12)
+    t.curve(withSides: 12, withSize: 10.5, drawSides: 12)
+    t.curve(withSides: 12, withSize: 10, drawSides: 12)
+    
+    t.right(120)
+    t.forward(130)
+    t.right(120)
+    t.forward(63)
+    t.left(185)
+    t.penDown()
+    t.forward(70)
+    
+    // draw thunder
+    for _ in 1...10 {
+        let length = t.random(15)
+        t.forward(length)
+        let turn = t.random(50) - 25
+        t.left(turn)
+    }
+    
+    for _ in 1...10 {
+        let length = t.random(15)
+        t.forward(length)
+        let turn = t.random(100) - 20
+        t.right(turn)
+    }
     
     
 
