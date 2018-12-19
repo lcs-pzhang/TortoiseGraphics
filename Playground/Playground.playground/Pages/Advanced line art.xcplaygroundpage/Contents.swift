@@ -6,7 +6,7 @@ import CoreGraphics
 
 let myFrame =  CGRect(x: 0, y: 0, width: 500, height: 500)
 let canvas = PlaygroundCanvas(frame: myFrame)
-canvas.frameRate = 100 //
+canvas.frameRate = 150 //
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
@@ -149,28 +149,36 @@ canvas.drawing { t in
     t.curve(withSides: 12, withSize: 10.5, drawSides: 12)
     t.curve(withSides: 12, withSize: 10, drawSides: 12)
     
+//    t.right(120)
+//    t.forward(130)
+//    t.right(120)
+//    t.forward(63)
+//    t.left(185)
+//    t.penDown()
+//    t.forward(70)
+    
+//    // draw thunder
+//    for _ in 1...15 {
+//        let length = t.random(7)
+//        t.forward(length)
+//        let turn = t.random(100) - 50
+//        t.left(turn)
+//    }
+    
+    t.penUp()
+    t.goto(-27, 0)
     t.right(120)
-    t.forward(130)
-    t.right(120)
-    t.forward(63)
-    t.left(185)
     t.penDown()
     t.forward(70)
-    
-    // draw thunder
-    for _ in 1...10 {
-        let length = t.random(15)
-        t.forward(length)
-        let turn = t.random(50) - 25
-        t.left(turn)
-    }
-    
-    for _ in 1...10 {
-        let length = t.random(15)
-        t.forward(length)
-        let turn = t.random(100) - 20
-        t.right(turn)
-    }
+    t.right(45)
+    // draw ice
+    t.curve(withSides: -15, withSize: 15, drawSides: 5)
+    t.right(210)
+    t.curve(withSides: -15, withSize: 15, drawSides: 5)
+    t.left(150)
+    t.curve(withSides: -15, withSize: 15, drawSides: 5)
+    t.left(150)
+    t.curve(withSides: -15, withSize: 15, drawSides: 5)
     
     
 
