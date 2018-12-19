@@ -11,25 +11,25 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { t in
-//    t.up()
-//    t.forward(100)
-//    t.right(90)
-//    t.penUp()
-//    t.curve(withSides: 20, withSize: 17, drawSides: 20)
-//    t.forward(10)
-//    t.left(90)
-//    t.up()
-//    t.backward(55)
-//    for _ in 1...36 {
-//        t.penUp()
-//        t.forward(52)
-//        t.penDown()
-//        t.forward(15)
-//        t.penUp()
-//        t.backward(67)
-//        t.right(10)
-//
-//    }
+    t.up()
+    t.forward(100)
+    t.right(90)
+    t.penUp()
+    t.curve(withSides: 20, withSize: 17, drawSides: 20)
+    t.forward(10)
+    t.left(90)
+    t.up()
+    t.backward(55)
+    for _ in 1...36 {
+        t.penUp()
+        t.forward(52)
+        t.penDown()
+        t.forward(15)
+        t.penUp()
+        t.backward(67)
+        t.right(10)
+
+    }
     t.penUp()
     t.forward(72)
     t.right(90)
@@ -149,21 +149,7 @@ canvas.drawing { t in
     t.curve(withSides: 12, withSize: 10.5, drawSides: 12)
     t.curve(withSides: 12, withSize: 10, drawSides: 12)
     
-//    t.right(120)
-//    t.forward(130)
-//    t.right(120)
-//    t.forward(63)
-//    t.left(185)
-//    t.penDown()
-//    t.forward(70)
-    
-//    // draw thunder
-//    for _ in 1...15 {
-//        let length = t.random(7)
-//        t.forward(length)
-//        let turn = t.random(100) - 50
-//        t.left(turn)
-//    }
+
     
     t.penUp()
     t.goto(-27, 0)
@@ -171,6 +157,7 @@ canvas.drawing { t in
     t.penDown()
     t.forward(70)
     t.right(45)
+    
     // draw ice
     t.curve(withSides: -15, withSize: 15, drawSides: 5)
     t.right(210)
@@ -180,7 +167,83 @@ canvas.drawing { t in
     t.left(150)
     t.curve(withSides: -15, withSize: 15, drawSides: 5)
     
+    t.penUp()
+    t.forward(70)
+    t.left(80)
+    t.forward(25)
+    t.penDown()
+    t.left(55)
+    t.forward(100)
     
+    // draw magma
+    t.right(60)
+    t.drawfire()
+    t.left(35)
+    t.forward(35)
+    t.left(110)
+    t.penDown()
+    t.forward(45)
+    t.left(180)
+    t.forward(7)
+    t.left(90)
+    t.penDown()
+    t.forward(13)
+    t.curve(withSides: 10, withSize: 1, drawSides: 10)
+    t.penDown()
+    t.back(13)
+    t.right(90)
+    t.forward(7)
+    t.left(90)
+    t.forward(17)
+    t.curve(withSides: 10, withSize: 1, drawSides: 10)
+    t.penDown()
+    t.back(17)
+    t.right(90)
+    t.forward(10)
+    t.left(90)
+    t.forward(17)
+    t.curve(withSides: 10, withSize: 1, drawSides: 10)
+    t.penDown()
+    t.back(17)
+    t.right(90)
+    t.forward(7)
+    t.left(90)
+    t.forward(13)
+    t.curve(withSides: 10, withSize: 1, drawSides: 10)
+    t.right(180)
+    t.penUp()
+    t.forward(15)
+    t.left(80)
+    t.curve(withSides: 10, withSize: 8, drawSides: 3)
+    t.left(45)
+    t.curve(withSides: -12, withSize: 4, drawSides: 11)
+    t.back(12)
+    t.right(75)
+    t.forward(30)
+    t.curve(withSides: -10, withSize: 8, drawSides: 3)
+    t.right(25)
+    t.curve(withSides: 12, withSize: 4, drawSides: 11)
+    
+    
+    t.right(120)
+    t.forward(130)
+    t.right(120)
+    t.forward(67)
+    t.left(25)
+    t.penUp()
+    t.forward(7)
+    t.penDown()
+    t.forward(70)
+
+    
+    // draw thunder
+    for _ in 1...15 {
+        let length = t.random(7)
+        t.forward(length)
+        let turn = t.random(100) - 50
+        t.left(turn)
+    }
+
 
     
     
@@ -189,7 +252,7 @@ canvas.drawing { t in
     
     
     
-
+//
 //    t.hideTortoise()
     
 }
