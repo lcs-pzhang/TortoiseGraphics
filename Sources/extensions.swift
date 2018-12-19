@@ -303,10 +303,123 @@ public extension Tortoise {
             self.forward(20)
             self.left(60)
         }
-        
-        
-    }
-   
 
+    }
+
+    func drawwind () {
+        self.curve(withSides: -10, withSize: 5, drawSides: 7)
+        self.curve(withSides: -12, withSize: 7, drawSides: 11)
+        self.penDown()
+        self.forward(11)
+        self.left(70)
+        self.curve(withSides: -10, withSize: 12, drawSides: 4)
+        self.curve(withSides: 10, withSize: 12, drawSides: 7)
+        self.curve(withSides: 12, withSize: 7, drawSides: 11)
+        self.curve(withSides: 10, withSize: 5, drawSides: 7)
+    }
+
+    func drawvoid() {
+        self.curve(withSides: 10, withSize: 4, drawSides: 10)
+        self.curve(withSides: 10, withSize: 3, drawSides: 10)
+        self.curve(withSides: 10, withSize: 2, drawSides: 10)
+        self.curve(withSides: 10, withSize: 1, drawSides: 10)
+        self.left(80)
+        self.forward(15)
+        self.left(90)
+        self.forward(5)
+        self.right(180)
+        self.curve(withSides: 12, withSize: 15, drawSides: 12)
+        self.curve(withSides: 12, withSize: 14.5, drawSides: 12)
+        self.curve(withSides: 12, withSize: 14, drawSides: 12)
+        self.curve(withSides: 12, withSize: 13.5, drawSides: 12)
+        self.curve(withSides: 12, withSize: 13, drawSides: 12)
+        self.curve(withSides: 12, withSize: 12.5, drawSides: 12)
+        self.curve(withSides: 12, withSize: 12, drawSides: 12)
+        self.curve(withSides: 12, withSize: 11.5, drawSides: 12)
+        self.curve(withSides: 12, withSize: 11, drawSides: 12)
+        self.curve(withSides: 12, withSize: 10.5, drawSides: 12)
+        self.curve(withSides: 12, withSize: 10, drawSides: 12)
+        }
+
+    func drawice() {
+        self.curve(withSides: -15, withSize: 15, drawSides: 5)
+        self.right(210)
+        self.curve(withSides: -15, withSize: 15, drawSides: 5)
+        self.left(150)
+        self.curve(withSides: -15, withSize: 15, drawSides: 5)
+        self.left(150)
+        self.curve(withSides: -15, withSize: 15, drawSides: 5)
+    }
+
+    func drawmagma() {
+        self.right(60)
+        self.drawfire()
+        self.left(35)
+        self.forward(35)
+        self.left(110)
+        self.penDown()
+        self.forward(45)
+        self.left(180)
+        self.forward(7)
+        self.left(90)
+        self.penDown()
+        self.forward(13)
+        self.curve(withSides: 10, withSize: 1, drawSides: 10)
+        self.penDown()
+        self.back(13)
+        self.right(90)
+        self.forward(7)
+        self.left(90)
+        self.forward(17)
+        self.curve(withSides: 10, withSize: 1, drawSides: 10)
+        self.penDown()
+        self.back(17)
+        self.right(90)
+        self.forward(10)
+        self.left(90)
+        self.forward(17)
+        self.curve(withSides: 10, withSize: 1, drawSides: 10)
+        self.penDown()
+        self.back(17)
+        self.right(90)
+        self.forward(7)
+        self.left(90)
+        self.forward(13)
+        self.curve(withSides: 10, withSize: 1, drawSides: 10)
+        self.right(180)
+        self.penUp()
+        self.forward(15)
+        self.left(80)
+        self.curve(withSides: 10, withSize: 8, drawSides: 3)
+        self.left(45)
+        self.curve(withSides: -12, withSize: 4, drawSides: 11)
+        self.back(12)
+        self.right(75)
+        self.forward(30)
+        self.curve(withSides: -10, withSize: 8, drawSides: 3)
+        self.right(25)
+        self.curve(withSides: 12, withSize: 4, drawSides: 11)
+
+    }
+
+    func drawsun() {
+        self.penDown()
+        self.forward(40)
+        self.right(177)
+        self.forward(100)
+        self.curve(withSides: 20, withSize: 3, drawSides: 20)
+        self.forward(3)
+        self.left(80)
+        self.penUp()
+        self.back(7)
+
+        for _  in 1...18 {
+            self.penDown()
+            self.forward(40)
+            self.back(40)
+            self.right(20)
+        }
+
+    }
 
 }
